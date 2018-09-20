@@ -61,6 +61,23 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .aparece {
+                animation: aparecer 2s;
+            }
+            @keyframes aparecer {
+            0% {    
+            opacity: 0;
+            }
+            100% {    
+            opacity: 1;
+            }
+            }
+            p {
+                font-size: 30px;
+                margin: 5px;
+            }
+
         </style>
     </head>
     <body>
@@ -77,8 +94,9 @@
             @endif
 
             <div class="content">
-                <div class="title m-b-md">
-                    Projeto Beta
+                <div class="title m-b-md aparece">
+                    <span>Projeto Beta</span>
+                    <p>dev. zika</p>
                 </div>
 
                 <div class="links">
